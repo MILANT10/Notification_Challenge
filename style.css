@@ -9,5 +9,13 @@
     --darkGrayishBlue: hsl(219, 12%, 42%);
     --veryDarkBlue: hsl(224, 21%, 14%);
     --fontSize: 16px;
-    
+
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+
 }
