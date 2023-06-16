@@ -1,30 +1,56 @@
-:root{
-    --red: hsl(1, 90%, 64%);
-    --blue: hsl(219, 85%, 26%);
-    --white: hsl(0, 0%, 100%);
-    --veryLightBlue: hsl(210, 60%, 98%);
-    --lightBlue: hsl(211, 68%, 94%);
-    --lightBlue2: hsl(205, 33%, 90%);
-    --grayishBlue: hsl(219, 14%, 63%);
-    --darkGrayishBlue: hsl(219, 12%, 42%);
-    --veryDarkBlue: hsl(224, 21%, 14%);
-    --fontSize: 16px;
-
+:root {
+  --red: hsl(1, 90%, 64%);
+  --blue: hsl(219, 85%, 26%);
+  --white: hsl(0, 0%, 100%);
+  --veryLightBlue: hsl(210, 60%, 98%);
+  --lightBlue: hsl(211, 68%, 94%);
+  --lightBlue2: hsl(205, 33%, 90%);
+  --grayishBlue: hsl(219, 14%, 63%);
+  --darkGrayishBlue: hsl(219, 12%, 42%);
+  --veryDarkBlue: hsl(224, 21%, 14%);
+  --fontSize: 16px;
 }
 
-body{
-    height: 100%;
-    width: 100%;
-    margin: 0%;
-    padding: 0%;
-    background-color: var(--lightBlue);
-
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+  
 }
 
-.container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: red;
+body {
+  background-color: var(--charcoalGrey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 1000px;
+  background-color: aqua;
+}
+
+.headerNotification{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.notificationsCenter{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+span{
+  justify-self: flex-start;
+}
