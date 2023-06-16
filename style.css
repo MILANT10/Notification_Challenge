@@ -52,12 +52,20 @@ body {
   flex-direction: column;
   gap: 20px;
   font-size: var(--fontSize);
+  font-weight: 500;
 }
 
 .notificationsCenter > div {
   display: flex;
   align-items: center;
   padding: 10px;
+}
+
+.notificationsCenter > div {
+  display: flex;
+  background-color: var(--lightBlue );
+  gap: 20px;
+  
 }
 
 .countNotif {
@@ -81,11 +89,26 @@ body {
   cursor: pointer;
 }
 
-.notifications1{
-  display: flex;
-  background-color: var(--veryLightBlue );
-  gap: 20px;
-}
+
 .profilImage{
   width: 7%;
+}
+
+.author{
+  font-weight: bold;
+  color: black;
+}
+
+.author:hover{
+  cursor: pointer;
+  color: var(--blue);
+}
+
+.eventNotif:hover{
+  cursor: pointer;
+  color: var(--blue);
+}
+
+.eventNotif, .timeNotif{
+  color: var(--darkGrayishBlue);
 }
