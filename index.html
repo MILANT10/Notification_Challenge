@@ -10,21 +10,31 @@
       type="image/png"
       sizes="32x32"
       href="./assets/images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap"
+      rel="stylesheet" />
 
     <title>Frontend Mentor | Notifications page</title>
   </head>
   <body>
     <div class="container">
       <div class="headerNotification">
-        <h1>Notifications<span>X</span></h1>
+        <h1 class="mainTitle">Notifications<span class="countNotif">3</span></h1>
 
-        <p>Mark all as read</p>
+        <p class="markRead">Mark all as read</p>
       </div>
       <div class="notificationsCenter">
         <div class="notifications1">
+          <img
+            class="profilImage"
+            src="./assets/images/avatar-mark-webber.webp"
+            alt="" />
           <p>
             Mark Webber reacted to your recent post My first tournament today!
-            1m ago
+            <br />
+            <span class="timeNotif">1m ago</span>
           </p>
         </div>
         <div class="notifications2">

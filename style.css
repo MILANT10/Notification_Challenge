@@ -9,6 +9,7 @@
   --darkGrayishBlue: hsl(219, 12%, 42%);
   --veryDarkBlue: hsl(224, 21%, 14%);
   --fontSize: 16px;
+  --fontFamily: "Plus Jakarta Sans", sans-serif;
 }
 
 html,
@@ -17,7 +18,6 @@ body {
   width: 100%;
   margin: 0%;
   padding: 0%;
-  
 }
 
 body {
@@ -25,32 +25,67 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: var(--fontFamily);
+  background-color: var(--veryLightBlue);
 }
-
-
 
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 1000px;
-  background-color: aqua;
+  width: 800px;
+  background-color: var(--white);
+  padding: 20px;
+  border-radius: 15px;
 }
 
-.headerNotification{
+.headerNotification {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   width: 100%;
 }
 
-.notificationsCenter{
+.notificationsCenter {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  font-size: var(--fontSize);
 }
 
-span{
-  justify-self: flex-start;
+.notificationsCenter > div {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.countNotif {
+  margin: 0px 13px;
+  border-radius: 10px;
+  background-color: var(--blue);
+  color: var(--white);
+  font-size: 28px;
+  padding: 0px 10px;
+}
+
+.mainTitle {
+  display: flex;
+  align-items: center;
+  padding: 0%;
+  margin: 0%;
+}
+
+.markRead:hover {
+  color: var(--blue);
+  cursor: pointer;
+}
+
+.notifications1{
+  display: flex;
+  background-color: var(--veryLightBlue );
+  gap: 20px;
+}
+.profilImage{
+  width: 7%;
 }
