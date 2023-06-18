@@ -53,6 +53,7 @@ body {
   gap: 20px;
   font-size: var(--fontSize);
   font-weight: 500;
+  width: 770px;
 }
 
 .notificationsCenter > div {
@@ -111,4 +112,12 @@ body {
 
 .eventNotif, .timeNotif{
   color: var(--darkGrayishBlue);
+}
+
+.notifications{
+  width: 100%;
+}
+
+.text{
+  width: 100%;
 }
