@@ -60,12 +60,12 @@ body {
   display: flex;
   align-items: center;
   padding: 10px;
+  gap: 20px;
 }
 
-.notificationsCenter > div {
-  display: flex;
+.notifications {
   background-color: var(--lightBlue );
-  gap: 20px;
+  
   
 }
 
@@ -114,9 +114,7 @@ body {
   color: var(--darkGrayishBlue);
 }
 
-.notifications{
-  width: 100%;
-}
+
 
 .text{
   width: 100%;
