@@ -11,9 +11,11 @@ notif.forEach(el => {
     el.style.backgroundColor = "hsl(211, 68%, 94%)";
   });
 
-  el.addEventListener("click", () => {
     let classNotif = window.getComputedStyle(el);
     let backgroundNotif = classNotif.getPropertyValue("background-color");
+
+  el.addEventListener("click", () => {
+    
 
     if (backgroundNotif) {
       el.style.backgroundColor = "white";
@@ -26,6 +28,16 @@ notif.forEach(el => {
         counter--;
         countNotif.textContent = counter;
       }
+    }
+  });
+
+
+
+  el.addEventListener("mouseover", () => {
+    if(backgroundNotif){
+        el.style.cursor = "pointer";
+    } else{
+        el.style.cursor = "auto";
     }
   });
 
