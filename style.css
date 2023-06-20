@@ -133,7 +133,7 @@ body {
   border-radius: 10px;
 }
 
-.notificationsCenter .notifications:nth-child(-n+3) .eventNotif::after{
+.redPoint{
   display: inline-block;
   content: "";
   width: 10px;
