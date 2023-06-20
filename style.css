@@ -63,11 +63,6 @@ body {
   gap: 20px;
 }
 
-.notifications {
-  background-color: var(--lightBlue );
-  
-  
-}
 
 .countNotif {
   margin: 0px 13px;
