@@ -72,8 +72,8 @@ body {
   border-radius: 10px;
   background-color: var(--blue);
   color: var(--white);
-  font-size: 28px;
-  padding: 0px 10px;
+  padding: 4px 12px;
+  font-size: 20px;
 }
 
 .mainTitle {
@@ -113,7 +113,6 @@ body {
 }
 
 
-
 .text{
   width: 100%;
 }
@@ -132,4 +131,14 @@ body {
   background-color: var(--lightBlue2);
   width: 80%;
   border-radius: 10px;
+}
+
+.notificationsCenter .notifications:nth-child(-n+3) .eventNotif::after{
+  display: inline-block;
+  content: "";
+  width: 10px;
+  background-color: var(--red);
+  height: 10px;
+  margin-left: 5px;
+  border-radius: 50%; 
 }
