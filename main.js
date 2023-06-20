@@ -19,7 +19,6 @@ notif.forEach(el => {
 
     if (backgroundNotif) {
       el.style.backgroundColor = "white";
-      el.classList.add("clicked");
       let redPoints = el.querySelectorAll(".redPoint");
       redPoints.forEach(redPoint => {
         redPoint.style.display = "none";
