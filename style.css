@@ -37,20 +37,22 @@ body {
   width: 800px;
   background-color: var(--white);
   padding: 20px;
+  padding-top: 0px;
   border-radius: 15px;
 }
 
 .headerNotification {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
   width: 100%;
+  padding: 15px;
+  width: 770px;
 }
 
 .notificationsCenter {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
   font-size: var(--fontSize);
   font-weight: 500;
   width: 770px;
@@ -59,8 +61,9 @@ body {
 .notificationsCenter > div {
   display: flex;
   align-items: center;
-  padding: 10px;
+  padding: 6px;
   gap: 20px;
+  border-radius: 10px;
 }
 
 
@@ -115,3 +118,18 @@ body {
   width: 100%;
 }
 
+.notificationsCenter > div:nth-child(4){
+ flex-wrap: wrap;
+ padding-bottom: 0%;
+}
+
+.textNotif{
+  margin: 0%;
+  padding: 20px;
+  position: relative;
+  left: 75px;
+  bottom: 20px;
+  background-color: var(--lightBlue2);
+  width: 80%;
+  border-radius: 10px;
+}
