@@ -11,13 +11,11 @@ notif.forEach(el => {
     el.style.backgroundColor = "hsl(211, 68%, 94%)";
   });
 
-    let classNotif = window.getComputedStyle(el);
-    let backgroundNotif = classNotif.getPropertyValue("background-color");
+  let classNotif = window.getComputedStyle(el);
+  let backgroundNotif = classNotif.getPropertyValue("background-color");
 
   el.addEventListener("click", () => {
-    
-
-    if (backgroundNotif) {
+    if (backgroundNotif && !el.classList.contains("clicked")) { 
       el.style.backgroundColor = "white";
       let redPoints = el.querySelectorAll(".redPoint");
       redPoints.forEach(redPoint => {
@@ -27,16 +25,15 @@ notif.forEach(el => {
         counter--;
         countNotif.textContent = counter;
       }
+      el.classList.add("clicked"); 
     }
   });
 
-
-
   el.addEventListener("mouseover", () => {
-    if(backgroundNotif){
-        el.style.cursor = "pointer";
-    } else{
-        el.style.cursor = "auto";
+    if (backgroundNotif) {
+      el.style.cursor = "pointer";
+    } else {
+      el.style.cursor = "auto";
     }
   });
 
@@ -49,5 +46,6 @@ notif.forEach(el => {
     redPoints.forEach(redPoint => {
       redPoint.style.display = "none";
     });
+    el.removeEventListener("click"); 
   });
 });
