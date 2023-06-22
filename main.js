@@ -17,6 +17,7 @@ notif.forEach(el => {
   el.addEventListener("click", () => {
     if (backgroundNotif && !el.classList.contains("clicked")) { 
       el.style.backgroundColor = "white";
+      el.style.cursor = "auto";
       let redPoints = el.querySelectorAll(".redPoint");
       redPoints.forEach(redPoint => {
         redPoint.style.display = "none";
@@ -30,10 +31,10 @@ notif.forEach(el => {
   });
 
   el.addEventListener("mouseover", () => {
-    if (backgroundNotif) {
-      el.style.cursor = "pointer";
-    } else {
+    if(el.classList.contains("clicked")){
       el.style.cursor = "auto";
+    } else {
+      el.style.cursor = "pointer";
     }
   });
 
