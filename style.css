@@ -62,7 +62,7 @@ body {
   margin: 0px 13px;
   border-radius: 10px;
   background-color: var(--blue);
-  color: var(--white);
+  color: white;
   padding: 6px 14px;
   font-size: 20px;
 }
