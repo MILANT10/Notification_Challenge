@@ -1,3 +1,4 @@
+/* Variables */
 :root {
   --red: hsl(1, 90%, 64%);
   --blue: hsl(219, 85%, 26%);
@@ -11,7 +12,7 @@
   --fontSize: 16px;
   --fontFamily: "Plus Jakarta Sans", sans-serif;
 }
-
+/* Html BODY */
 html,
 body {
   height: 100%;
@@ -19,7 +20,7 @@ body {
   margin: 0%;
   padding: 0%;
 }
-
+/* Body display */
 body {
   background-color: var(--charcoalGrey);
   display: flex;
@@ -28,7 +29,7 @@ body {
   font-family: var(--fontFamily);
   background-color: var(--veryLightBlue);
 }
-
+/* Main container */
 .container {
   display: flex;
   justify-content: center;
@@ -40,7 +41,7 @@ body {
   padding-top: 0px;
   border-radius: 15px;
 }
-
+/* Header with title */
 .headerNotification {
   display: flex;
   justify-content: space-between;
@@ -48,25 +49,15 @@ body {
   padding: 15px;
   width: 770px;
 }
-
-.notificationsCenter {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  font-size: var(--fontSize);
-  font-weight: 500;
-  width: 770px;
-}
-
-.notificationsCenter > div {
+/* Main title */
+.mainTitle {
   display: flex;
   align-items: center;
-  padding: 6px;
-  gap: 20px;
-  border-radius: 10px;
+  padding: 0%;
+  margin: 0%;
 }
 
-
+/* Counter notif */
 .countNotif {
   margin: 0px 13px;
   border-radius: 10px;
@@ -76,53 +67,65 @@ body {
   font-size: 20px;
 }
 
-.mainTitle {
-  display: flex;
-  align-items: center;
-  padding: 0%;
-  margin: 0%;
-}
-
+/* Effect hover mark all as read */
 .markRead:hover {
   color: var(--blue);
   cursor: pointer;
 }
 
+/* Notifications center */
+.notificationsCenter {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: var(--fontSize);
+  font-weight: 500;
+  width: 770px;
+}
+/* Style for div in notifications center */
+.notificationsCenter > div {
+  display: flex;
+  align-items: center;
+  padding: 6px;
+  gap: 20px;
+  border-radius: 10px;
+}
 
+/* Profil picture */
 .profilImage{
   width: 7%;
   margin-left: 10px;
 }
-
+/* Author */
 .author{
   font-weight: bold;
   color: black;
 }
-
+/* Effect hover for author */
 .author:hover{
   cursor: pointer;
   color: var(--blue);
 }
-
-.eventNotif:hover{
-  cursor: pointer;
-  color: var(--blue);
-}
-
+/* Event and time notif */
 .eventNotif, .timeNotif{
   color: var(--darkGrayishBlue);
 }
 
-
+/* Event notif hover effect */
+.eventNotif:hover{
+  cursor: pointer;
+  color: var(--blue);
+}
+/* Text */
 .text{
   width: 100%;
 }
-
+/* Style for 4th notification mith message */
 .notificationsCenter > div:nth-child(4){
  flex-wrap: wrap;
  padding-bottom: 0%;
 }
-
+/* Text notif of 4th notif */
 .textNotif{
   margin: 0%;
   padding: 20px;
@@ -133,7 +136,7 @@ body {
   width: 80%;
   border-radius: 10px;
 }
-
+/* Redpoint of the 3 first notif*/
 .redPoint{
   display: inline-block;
   content: "";
