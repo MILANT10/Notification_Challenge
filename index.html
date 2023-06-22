@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
+    <!-- Link for css -->
     <link rel="stylesheet" href="style.css" />
+    <!-- link for icon -->
     <link
       rel="icon"
       type="image/png"
@@ -15,110 +17,140 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap"
       rel="stylesheet" />
-
     <title>Frontend Mentor | Notifications page</title>
   </head>
   <body>
-    <div class="container">
-      <div class="headerNotification">
-        <h1 class="mainTitle">
-          Notifications<span class="countNotif">x</span>
-        </h1>
+    <!-- Main content -->
+    <main>
+      <!-- Container content -->
+      <div class="container">
+        <!-- Header of container -->
+        <header>
+          <div class="headerNotification">
+            <!-- Main title with Counter -->
+            <h1 class="mainTitle">
+              Notifications<span class="countNotif"></span>
+            </h1>
+            <!-- Mark all as read button -->
+            <p class="markRead">Mark all as read</p>
+          </div>
+        </header>
+        <!-- Article of container -->
+        <article>
+          <!-- Notifications center -->
+          <div class="notificationsCenter">
+            <!-- Notification 1 -->
+            <div class="notifications">
+              <img
+                class="profilImage"
+                src="./assets/images/avatar-mark-webber.webp"
+                alt="mark webber's profil picture" />
+              <p class="text">
+                <span class="author">Mark Webber</span> reacted to your recent
+                post <span class="eventNotif">My first tournament today!</span
+                ><span class="redPoint"></span>
+                <br />
+                <span class="timeNotif">1m ago</span>
+              </p>
+            </div>
+            <!-- Notification 2 -->
+            <div class="notifications">
+              <img
+                class="profilImage"
+                src="./assets/images/avatar-angela-gray.webp"
+                alt="mark webber's profil picture" />
+              <p>
+                <span class="author">Angela Gray</span>
+                followed you <span class="eventNotif"></span
+                ><span class="redPoint"></span>
+                <br />
+                <span class="timeNotif">5m ago</span>
+              </p>
+            </div>
+            <!-- Notification 3 -->
+            <div class="notifications">
+              <img
+                class="profilImage"
+                src="./assets/images/avatar-jacob-thompson.webp"
+                alt="mark webber's profil picture" />
+              <p>
+                <span class="author">Jacob Thompson</span> has joined your group
+                <span class="eventNotif">Chess Club</span
+                ><span class="redPoint"></span>
+                <br />
+                <span class="timeNotif">1 day ago</span>
+              </p>
+            </div>
+            <!-- Notification 4 -->
 
-        <p class="markRead">Mark all as read</p>
-      </div>
-      <div class="notificationsCenter">
-        <div class="notifications">
-          <img
-            class="profilImage"
-            src="./assets/images/avatar-mark-webber.webp"
-            alt="mark webber's profil picture" />
-          <p class="text">
-            <span class="author">Mark Webber</span> reacted to your recent post
-            <span class="eventNotif">My first tournament today!</span><span class="redPoint"></span>
-            <br />
-            <span class="timeNotif">1m ago</span>
-          </p>
-        </div>
-        <div class="notifications">
-          <img
-            class="profilImage"
-            src="./assets/images/avatar-angela-gray.webp"
-            alt="mark webber's profil picture" />
-          <p>
-            <span class="author">Angela Gray</span>
-            followed you <span class="eventNotif"></span><span class="redPoint"></span>
-            <br />
-            <span class="timeNotif">5m ago</span>
-          </p>
-        </div>
-        <div class="notifications">
-          <img
-            class="profilImage"
-            src="./assets/images/avatar-jacob-thompson.webp"
-            alt="mark webber's profil picture" />
-          <p>
-            <span class="author">Jacob Thompson</span> has joined your group
-            <span class="eventNotif">Chess Club</span><span class="redPoint"></span>
-            <br />
-            <span class="timeNotif">1 day ago</span>
-          </p>
-        </div>
-        <div class="notifications">
-          <img
-            class="profilImage"
-            src="./assets/images/avatar-rizky-hasanuddin.webp"
-            alt="mark webber's profil picture" />
-          <p>
-            <span class="author">Rizky Hasanuddin</span> sent you a private
-            message
-            <br />
-            <span class="timeNotif">5 days ago</span>
-          </p>
-          <p class="textNotif">Hello, thanks for setting up the Chess Club. I've been a member for a <br> few weeks now and 
-            I'm already having lots of fun and improving my game.</p>
-        </div>
-        <div class="notifications">
-          <img
-            class="profilImage"
-            src="./assets/images/avatar-kimberly-smith.webp"
-            alt="mark webber's profil picture" />
-          <p>
-            <span class="author">Kimberly Smith</span> <span class="eventNotif">commented on your picture</span>
-            <br />
-            <span class="timeNotif"> week ago</span>
-          </p>
-        </div>
-        <div class="notifications">
-          <img
-            class="profilImage"
-            src="./assets/images/avatar-nathan-peterson.webp"
-            alt="mark webber's profil picture" />
-          <p>
-            <span class="author">Nathan Peterson</span> reacted to your recent
-            post
-            <span class="eventNotif"
-              >5 end-game strategies to increase your win rate</span
-            >
-            <br />
-            <span class="timeNotif">2 weeks ago</span>
-          </p>
-        </div>
-        <div class="notifications">
-          <img
-            class="profilImage"
-            src="./assets/images/avatar-anna-kim.webp"
-            alt="mark webber's profil picture" />
-          <p>
-            <span class="author">Anna Kim</span> left the group
-            <span class="eventNotif">Chess Club</span>
-            <br />
-            <span class="timeNotif">2 weeks ago</span>
-          </p>
-        </div>
-      </div>
-    </div>
+            <div class="notifications">
+              <img
+                class="profilImage"
+                src="./assets/images/avatar-rizky-hasanuddin.webp"
+                alt="mark webber's profil picture" />
+              <p>
+                <span class="author">Rizky Hasanuddin</span> sent you a private
+                message
+                <br />
+                <span class="timeNotif">5 days ago</span>
+              </p>
+              <p class="textNotif">
+                Hello, thanks for setting up the Chess Club. I've been a member
+                for a <br />
+                few weeks now and I'm already having lots of fun and improving
+                my game.
+              </p>
+            </div>
+            <!-- Notification 5 -->
 
+            <div class="notifications">
+              <img
+                class="profilImage"
+                src="./assets/images/avatar-kimberly-smith.webp"
+                alt="mark webber's profil picture" />
+              <p>
+                <span class="author">Kimberly Smith</span>
+                <span class="eventNotif">commented on your picture</span>
+                <br />
+                <span class="timeNotif"> week ago</span>
+              </p>
+            </div>
+            <!-- Notification 6 -->
+
+            <div class="notifications">
+              <img
+                class="profilImage"
+                src="./assets/images/avatar-nathan-peterson.webp"
+                alt="mark webber's profil picture" />
+              <p>
+                <span class="author">Nathan Peterson</span> reacted to your
+                recent post
+                <span class="eventNotif"
+                  >5 end-game strategies to increase your win rate</span
+                >
+                <br />
+                <span class="timeNotif">2 weeks ago</span>
+              </p>
+            </div>
+            <!-- Notification 7 -->
+
+            <div class="notifications">
+              <img
+                class="profilImage"
+                src="./assets/images/avatar-anna-kim.webp"
+                alt="mark webber's profil picture" />
+              <p>
+                <span class="author">Anna Kim</span> left the group
+                <span class="eventNotif">Chess Club</span>
+                <br />
+                <span class="timeNotif">2 weeks ago</span>
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+    <!-- JS Scirpt -->
     <script src="main.js"></script>
   </body>
 </html>
