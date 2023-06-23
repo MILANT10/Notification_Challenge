@@ -182,7 +182,11 @@ body {
  }
 
  .headerNotification{
-  width: 350px;
+  width: 320px;
+ }
+
+ .countNotif{
+  padding: 3px 7px;
  }
 
  .notificationsCenter{
@@ -190,4 +194,35 @@ body {
   font-size: 12px;
 
  }
+
+ .textNotif{
+  position: relative;
+  left: 60px;
+  bottom: 80px;
+  width: 200px;
+ }
+
+ .pictureEvent{
+  left: 0px;
+  width: 35px;
+ }
+
+ .notificationsCenter > div {
+  padding: 4px;
+ }
+
+ .profilImage{
+  width: 10%;
+ }
+
+ .notificationsCenter > div:nth-child(4){
+    height: 200px;
+  }
+
+  .mobileClass{
+    position: relative;
+    bottom: 60px;
+    left: 60px;
+    width: 250px;
+  }
 }
