@@ -9,13 +9,11 @@ let counter = 3;
 countNotif.textContent = counter;
 
 // For each notif list for select all elements notifications
-notif.forEach(el => {
   firstThreeElements.forEach(el => {
     el.style.backgroundColor = "hsl(211, 68%, 94%)";
-  });
-
-  let classNotif = window.getComputedStyle(el);
-  let backgroundNotif = classNotif.getPropertyValue("background-color");
+  
+    let classNotif = window.getComputedStyle(el);
+    let backgroundNotif = classNotif.getPropertyValue("background-color");
   // Event click
   el.addEventListener("click", () => {
     if (backgroundNotif && !el.classList.contains("clicked")) { 
