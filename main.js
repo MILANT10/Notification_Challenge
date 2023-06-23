@@ -1,15 +1,15 @@
 // Variables
-let nodeList = document.querySelectorAll(".notifications");
-let notif = Array.from(nodeList);
-let firstThreeElements = notif.slice(0, 3);
+let NOTIFICATIONS_LIST = document.querySelectorAll(".notifications");
+let NOTIFICATIONS_ARRAY = Array.from(NOTIFICATIONS_LIST);
+let FIRST_THREE_ELEMENTS = NOTIFICATIONS_ARRAY.slice(0, 3);
 let allRead = document.querySelector(".markRead");
-let countNotif = document.querySelector(".countNotif");
+let COUNTER_NOTIFICATION = document.querySelector(".countNotif");
 // Simple Trick for counter
 let counter = 3;
-countNotif.textContent = counter;
+COUNTER_NOTIFICATION.textContent = counter;
 
 // For each firstThree element list for select all elements notifications
-  firstThreeElements.forEach(el => {
+  FIRST_THREE_ELEMENTS.forEach(el => {
     el.style.backgroundColor = "hsl(211, 68%, 94%)";
   
     let classNotif = window.getComputedStyle(el);
@@ -25,7 +25,7 @@ countNotif.textContent = counter;
       });
       if (counter > 0) {
         counter--;
-        countNotif.textContent = counter;
+        COUNTER_NOTIFICATION.textContent = counter;
       }
       el.classList.add("clicked"); 
     }
@@ -43,7 +43,7 @@ countNotif.textContent = counter;
     el.style.backgroundColor = "white";
     el.classList.add("clicked");
     counter = 0;
-    countNotif.textContent = counter;
+    COUNTER_NOTIFICATION.textContent = counter;
     let redPoints = el.querySelectorAll(".redPoint");
     redPoints.forEach(redPoint => {
       redPoint.style.display = "none";
