@@ -168,3 +168,6 @@ body {
   padding: 0%;
 }
 
+.pictureEvent:hover{
+  cursor: pointer;
+}

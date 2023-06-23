@@ -8,7 +8,7 @@ let countNotif = document.querySelector(".countNotif");
 let counter = 3;
 countNotif.textContent = counter;
 
-// For each notif list for select all elements notifications
+// For each firstThree element list for select all elements notifications
   firstThreeElements.forEach(el => {
     el.style.backgroundColor = "hsl(211, 68%, 94%)";
   
