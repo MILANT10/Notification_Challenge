@@ -171,3 +171,23 @@ body {
 .pictureEvent:hover{
   cursor: pointer;
 }
+
+@media only screen and (max-width: 376px) {
+
+  html,body{
+    font-size: 12px;
+  }
+  .container{
+  width: 300px;
+ }
+
+ .headerNotification{
+  width: 350px;
+ }
+
+ .notificationsCenter{
+  width: 300px;
+  font-size: 12px;
+
+ }
+}
