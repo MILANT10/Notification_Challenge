@@ -178,11 +178,12 @@ body {
     font-size: 12px;
   }
   .container{
-  width: 300px;
+    height: 97vh;
+    width: 37vh;
  }
 
  .headerNotification{
-  width: 320px;
+  width: 300px;
  }
 
  .countNotif{
