@@ -172,6 +172,7 @@ body {
   cursor: pointer;
 }
 
+/* Mobile Version */
 @media only screen and (max-width: 376px) {
 
   html,body{
